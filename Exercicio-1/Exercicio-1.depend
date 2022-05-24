@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1653428763 source:e:\github-repositorios\lista-modularizacao-2\exercicio-1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Exercicio-1.h"
+
+1653421896 e:\github-repositorios\lista-modularizacao-2\exercicio-1\exercicio-1.h
+
