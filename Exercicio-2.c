@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float procedimento(int);
+void procedimento(int, float*);
 
 int main()
 {   
-    int n;
+    int n; float s;
     printf("Insira o valor de N (sendo > 2): ");
     scanf("%i", &n);
-    
-    printf("Resultado: %.2f", procedimento(n));
+    procedimento(n, &s);
+    printf("Resultado: %.2f", s);
     return 0;
 }
 
-float procedimento(int n) {
+void procedimento(int n, float * s ) {
     float denominador = 2;
     float ultimo = 0; float penultimo = 0; float novo = 1;
     int sinal = 0; int soma = 1;
@@ -42,5 +42,5 @@ float procedimento(int n) {
         novo = ultimo + penultimo;
         denominador += 2;
     }
-    return resultado;
+    *s = resultado;
 }
