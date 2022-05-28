@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Exercicio-1.h"
 
 int main()
-{
-    int n = 3; // n > 2
+{   
+    int n;
+    printf("Insira o valor de N (sendo > 2): ");
+    scanf("%i", &n);
     float denominador = 2;
     float ultimo = 0; float penultimo = 0; float novo = 1;
     int sinal = 0; int soma = 1;
